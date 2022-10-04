@@ -1,0 +1,10 @@
+---
+name: Spawners
+main: Tazz\Spawners\Main
+version: 0.0.6
+api:
+- 3.0.0
+author: Tazz
+website: https://github.com/lltazzll2120 
+description: Plugin implementing a Stackable Spawner System for PMMP
+...

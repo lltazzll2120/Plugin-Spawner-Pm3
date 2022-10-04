@@ -1,0 +1,71 @@
+#  ______                           _____
+# | ___ \                         /  ___|
+# | |_/ /_   _ _ __ __ _  ___ _ __\ `--. _ __   __ ___      ___ __   ___ _ __ ___
+# | ___ \ | | | '__/ _` |/ _ \ '__|`--. \ '_ \ / _` \ \ /\ / / '_ \ / _ \ '__/ __|
+# | |_/ / |_| | | | (_| |  __/ |  /\__/ / |_) | (_| |\ V  V /| | | |  __/ |  \__ \
+# \____/ \__,_|_|  \__, |\___|_|  \____/| .__/ \__,_| \_/\_/ |_| |_|\___|_|  |___/
+#                  __/ |               | |
+#                 |___/                |_|
+
+
+# Définissez cette valeur sur false si vous souhaitez enregistrer des entités avec un plugin externe tel que PureEntitiesX.
+# Si cela est défini sur false, les seuls spawners qui fonctionneront sont Zombie et Squid, si vous n’avez pas de plugin externe
+register-mobs: true
+
+# Bien que cela soit vrai, les spawners peuvent être empilés les uns sur les autres. Si cette valeur est définie sur false, chaque Spawner devra
+# être placé séparément
+allow-spawner-stacking: true
+
+# Bien que cela soit vrai, les mobs sont empilés les uns sur les autres. Si cela est défini sur false, les mobs seront plutôt des entités individuelles
+# Si cette option est désactivée, Mobs déposera toujours des objets et de l’expérience.
+allow-mob-stacking: true
+
+# Définir cela sur false fait que les foules ne laissent tomber aucun Exp. Cela ignore également les valeurs Mob Experience définies
+mobs-drop-exp: true
+
+# Définir cela sur false fait que les foules ne laissent tomber aucun élément. Cela ignore également tout ensemble Mob Drops, à la fois personnalisé et par défaut mob drops
+mobs-drop-items: true
+
+# Activez Silk Touch. Lorsqu’il est défini sur false, les spawners peuvent être récupérés avec toutes les pioches
+# Lorsqu’elles sont définies sur true, seules les pioches avec Silk Touch peuvent capter les spawners
+enable-silk-touch: true
+
+# Il s’agit du taux de spawn de base d’un Spawner. Si cela est défini sur 40, un seul Zombie Spawner non empilé
+# engendre un zombie toutes les 40 secondes. Si 2 Spawners sont empilés, il en engendre un toutes les 20 secondes à la place.
+# Si vous définissez cette valeur sur 20, un seul Zombie Spawner non empilé engendrera un Zombie toutes les 20 secondes.
+base-spawn-rate: 40
+
+# Il s’agit de la plage de frai, à partir de la distance que vous pouvez être d’un géniteur pour qu’il continue à frayer.
+# Exemple: Si la plage de spawn est de 16, alors le spawning de la foule de votre point de vue irait jusqu’à 16 blocs.
+# Les gens doivent noter que la plage de spawn n’est pas en morceaux. C’est en blocs.
+# Réglage recommandé - Ne le mettez pas en dessous de 4, tout ce qui est supérieur à 4 fera l’affaire.
+# Le plus haut à emporter: 16, mais vous pouvez faire plus. Tout ce qui convient à vos besoins.
+# Valeur par défaut : 8
+spawn-range: 8
+  
+# Il s’agit de l’échelle d’entité dans le Spawner. La taille de l’entité à l’intérieur du spawner peut être configurée
+# en utilisant ceci. Une valeur trop élevée ou trop faible ne s’affichera pas. La plage optimale est comprise entre 1 et 2.
+# Certains mobs, par exemple, Ghasts n’affichent pas de valeurs plus élevées
+spawner-entity-scale: 1.8
+
+# Si vous ne voulez pas que les foules s’empilent dans un monde particulier, énumérez le nom complet du dossier du monde ici. Il s’agit d’un tableau et de tout
+# mondes dans ce tableau aura l’empilement de foule désactivé.
+mob-stacking-disabled-worlds:
+  - "disabledmobstacking"
+  - "disabledmobstackingheretoo"
+
+# Si vous ne voulez pas que les spawners s’empilent dans un monde particulier, listez le nom complet du dossier du monde ici. Il s’agit d’un tableau et de tout
+# mondes de ce tableau auront l’empilement de spawner désactivé.
+spawner-stacking-disabled-worlds:
+  - "disabledspawnerstacking"
+  - "disabledspawnerstackingheretoo"
+
+# Plugin Messages:
+# Use "&" for color codes.
+no-available-spawners: "&cYou do not have any Spawners of this type in your hand!"
+player-given-spawner: "&aPlayer &b{player} &ahas been given an &b{spawner}"
+all-spawners-stacked: "&aAll available Spawners stacked"
+
+
+
+
